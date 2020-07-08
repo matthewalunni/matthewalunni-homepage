@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Jumbotron, Button, Row, Col } from 'react-bootstrap';
 import { FaGithub } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 
 class HomePage extends Component {
@@ -19,7 +20,7 @@ class HomePage extends Component {
                         </p>
                         <Row>
                             <Col>
-                                <Button variant="primary" className="w-100">Resume</Button>
+                                <Link className="w-100 btn btn-primary white-text" to='/files/Matthew Alunni Resume.pdf' target="_blank" download>Resume</Link>
                             </Col>
                             <Col>
                                 <Button variant="primary" className="w-100" onClick={() => {window.open("https://github.com/matthewalunni")}}><FaGithub /> &nbsp; GitHub</Button>
