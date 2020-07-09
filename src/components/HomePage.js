@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Jumbotron, Button, Row, Col } from 'react-bootstrap';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaDownload } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
 
@@ -11,19 +11,18 @@ class HomePage extends Component {
             <section id="home">
                 <Jumbotron className="jumbotron-home">
                     <div className="inner-jumbotron-home">
-                        <h1>Hello, my name is Matthew Alunni.</h1>
-                        <p>
+                        <h1 className="jumbotron-heading">Hello, my name is Matthew Alunni.</h1>
+                        <p className="courier">
                             I am a software developer.
-                            Check out my <a href="#projects">personal projects</a>, or some of my previous <a href="#projects">freelance work</a>.
-                            Feel free to read some <a href="#testimonials">testimonials</a> given to me by previous employers or freelance customers.
-
+                            Check out my <a href="#projects">personal projects</a>, or feel free to read some of my 
+                            <a href="#testimonials"> testimonials</a> given to me by previous employers.
                         </p>
                         <Row>
-                            <Col>
-                                <Link className="w-100 btn btn-primary white-text" to='/files/Matthew Alunni Resume.pdf' target="_blank" download>Resume</Link>
+                            <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }}>
+                                <Link className="w-100 btn btn-primary white-text top-button" to='/files/Matthew Alunni Resume.pdf' target="_blank" download><FaDownload /> &nbsp;Resume</Link>
                             </Col>
-                            <Col>
-                                <Button variant="primary" className="w-100" onClick={() => {window.open("https://github.com/matthewalunni")}}><FaGithub /> &nbsp; GitHub</Button>
+                            <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 2 }}>
+                                <Button variant="primary" className="w-100 button" onClick={() => { window.open("https://github.com/matthewalunni") }}><FaGithub /> &nbsp; GitHub</Button>
                             </Col>
                         </Row>
                     </div>

@@ -9,8 +9,7 @@ body {
 }
 
 h1,
-p,
-a {
+p {
   color: #fff;
 }
 
@@ -27,7 +26,7 @@ code {
 .navbar {
   padding: 3vh;
   height: 10vh;
-
+  z-index: 999;
   /* sticky  */
   position: fixed;
   top: 0;
@@ -41,9 +40,10 @@ code {
 }
 
 .jumbotron-home {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url("./img/jumbotron-home.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/jumbotron-home.jpg");
   -webkit-background-size: cover;
-  -moz-background-size:  cover;
+  -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -51,7 +51,7 @@ code {
   background-repeat: no-repeat;
   top: 0;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -65,7 +65,7 @@ code {
 }
 
 .jumbotron-about {
-  background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.85) );
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.85));
   top: 0;
   width: 100vw;
   height: 90vh;
@@ -93,6 +93,50 @@ code {
   display: flex;
 }
 
+.modal-text {
+  color: black!important;
+}
+
 .white-text {
-  color: #fff!important;
+  color: #fff !important;
+}
+
+.courier {
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .inner-jumbotron-home {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .top-button {
+    margin-bottom: 2vh;
+  }
+
+  .jumbotron-heading {
+    margin-top: 5vh;
+  }
+
+  .jumbotron-home {
+    height: 100vh;
+  }
+
+  .about-col-heading {
+    margin-top: 1vh;
+  }
+
+  .about-me-icon {
+    width: 25vw;
+  }
+
+  .navbar-collapse {
+    background-color: black;
+    width: 100%;
+    padding: 10%;
+  }
 }
