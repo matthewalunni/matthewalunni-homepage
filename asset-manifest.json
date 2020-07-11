@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/matthewalunni-homepage/static/css/main.101f798c.chunk.css",
+    "main.js": "/matthewalunni-homepage/static/js/main.a62d11da.chunk.js",
+    "main.js.map": "/matthewalunni-homepage/static/js/main.a62d11da.chunk.js.map",
+    "runtime-main.js": "/matthewalunni-homepage/static/js/runtime-main.b4a2e0f0.js",
+    "runtime-main.js.map": "/matthewalunni-homepage/static/js/runtime-main.b4a2e0f0.js.map",
+    "static/js/2.3b3db7f4.chunk.js": "/matthewalunni-homepage/static/js/2.3b3db7f4.chunk.js",
+    "static/js/2.3b3db7f4.chunk.js.map": "/matthewalunni-homepage/static/js/2.3b3db7f4.chunk.js.map",
+    "index.html": "/matthewalunni-homepage/index.html",
+    "precache-manifest.c6f1e7c65e6ae2d6e33abd06957852dd.js": "/matthewalunni-homepage/precache-manifest.c6f1e7c65e6ae2d6e33abd06957852dd.js",
+    "service-worker.js": "/matthewalunni-homepage/service-worker.js",
+    "static/css/main.101f798c.chunk.css.map": "/matthewalunni-homepage/static/css/main.101f798c.chunk.css.map",
+    "static/js/2.3b3db7f4.chunk.js.LICENSE.txt": "/matthewalunni-homepage/static/js/2.3b3db7f4.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/matthewalunni-homepage/static/media/jumbotron-projects.40376fd9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4a2e0f0.js",
+    "static/js/2.3b3db7f4.chunk.js",
+    "static/css/main.101f798c.chunk.css",
+    "static/js/main.a62d11da.chunk.js"
+  ]
+}
