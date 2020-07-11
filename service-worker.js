@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/matthewalunni-homepage/precache-manifest.c6f1e7c65e6ae2d6e33abd06957852dd.js"
+  "/matthewalunni-homepage/precache-manifest.b10ca3e201400d5217d66063d73f54e2.js"
 );
 
 self.addEventListener('message', (event) => {
