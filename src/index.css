@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,6 +13,8 @@ body {
 }
 
 h1,
+h4,
+h6,
 p {
   color: #fff;
 }
@@ -24,6 +30,8 @@ code {
 }
 
 .navbar {
+  background-color: black !important;
+  border-bottom: 1px solid #fff;
   padding: 3vh;
   height: 10vh;
   z-index: 999;
@@ -41,7 +49,7 @@ code {
 
 .jumbotron-home {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./img/jumbotron-home.jpg");
+    url("./img/jumbotron-home (2).jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -65,10 +73,28 @@ code {
 }
 
 .jumbotron-about {
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.85));
+  background: linear-gradient(rgba(54, 136, 173, 1), rgba(54, 136, 173, 1));
   top: 0;
   width: 100vw;
   height: 90vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.jumbotron-projects {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/jumbotron-projects.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -79,6 +105,12 @@ code {
   justify-content: center;
   text-align: center;
   width: 70vw;
+}
+
+.inner-jumbotron-contact {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .about-me-icon {
@@ -94,15 +126,58 @@ code {
 }
 
 .modal-text {
-  color: black!important;
+  color: black !important;
 }
 
 .white-text {
   color: #fff !important;
 }
 
+.card-text {
+  color: black;
+}
+
 .courier {
-  font-family: 'Courier New', Courier, monospace; 
+  font-family: "Courier New", Courier, monospace;
+}
+
+.inner-jumbotron-projects {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70vw;
+}
+
+.jumbotron-contact {
+  background: linear-gradient(rgba(142, 76, 150, 1), rgba(142, 76, 150, 1));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  width: 100vw;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.social-links {
+  width: 20vw;
+  margin: auto;
+}
+
+.social-icons {
+  color: #fff;
+  width: 3vw;
+  height: auto;
+}
+
+.contact-text {
+  margin-bottom: 2.5vh;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -112,6 +187,10 @@ code {
     justify-content: center;
     text-align: center;
     width: 80vw;
+  }
+
+  .jumbotron-projects {
+    height: 100%;
   }
 
   .top-button {
@@ -138,5 +217,21 @@ code {
     background-color: black;
     width: 100%;
     padding: 10%;
+    border: 1px solid white;
+  }
+
+  .navbar-toggler {
+    border: 1px solid white;
+  }
+
+  .social-links {
+    width: 60vw;
+    margin: auto;
+  }
+
+  .social-icons {
+    color: #fff;
+    width: 8vw;
+    height: auto;
   }
 }
